@@ -502,3 +502,4 @@ function remove_bad_br_tags($content) {
 	$content = str_ireplace("<br />\n", "", $content);
 	return $content;
 }
+remove_filter('the_content', 'wpautop');
